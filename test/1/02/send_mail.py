@@ -4,10 +4,10 @@
 import smtplib
 import string
 HOST = 'smtp.163.com'
-SUBJECT = '123'
+SUBJECT = '你好'
 FROM = 'hgh_da@163.com'
 TO = '1418803468@qq.com'
-text = "你是笨蛋"
+text = "说点什么好呢"
 BODY = string.join((
         "From: %s" % FROM,
         "To: %s" % TO,
@@ -18,6 +18,6 @@ BODY = string.join((
 server = smtplib.SMTP()
 server.connect(HOST,"25")
 server.starttls()
-server.login("hgh_da@163.com","252487559.s")
+server.login("hgh_da@163.com","2524xxxxx")
 server.sendmail(FROM,[TO],BODY)
 server.quit()
